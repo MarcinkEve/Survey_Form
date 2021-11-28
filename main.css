@@ -4,18 +4,13 @@ body {
   font-family: "Courgette", cursive;
 }
 .title-name {
-  line-height: 1%;
+  line-height: 30px;
 }
 #title {
   font-size: 60px;
   line-height: 0;
   margin-bottom: 10vh;
   margin-top: 8vh;
-}
-@media (max-width: 480px) {
-  #title {
-    font-size: 3rem;
-  }
 }
 
 #title,
@@ -36,7 +31,8 @@ body {
   border-radius: 10px;
 }
 #survey-form {
-  display: block;
+  /* display: block; */
+  margin: 0rem 1rem;
 }
 form {
   background: url(https://images.unsplash.com/photo-1608114759160-ad0b1bac35b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80);
@@ -56,6 +52,16 @@ p {
   font-size: 1.5rem;
   line-height: 2.4rem;
 }
+.leave-back {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+}
+.calendar-field {
+  width: 40%;
+  padding-right: 2rem;
+}
 #direction,
 .leave,
 .back,
@@ -64,8 +70,17 @@ p {
   font-size: 1.5rem;
 }
 .form-group {
-  margin: 0 auto 0 1rem;
+  margin: 0.5rem auto 0 3rem;
   padding: 0rem;
+}
+.check {
+  margin: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+.form-group-options {
+  display: flex;
+  align-items: center;
 }
 input,
 select,
@@ -79,12 +94,12 @@ textarea {
 }
 input[type="radio"] {
   border: 2px;
-  width: 1rem;
+  width: 2rem;
   height: 1.5rem;
 }
 input[type="checkbox"] {
   border: 2px;
-  width: 1rem;
+  width: 2rem;
   height: 1.5rem;
 }
 
@@ -92,8 +107,8 @@ input[type="checkbox"] {
 #kids,
 #babies {
   display: flex;
-  display-direction: column;
-  width: 30%;
+  flex-direction: column;
+  width: 10%;
   height: 2%;
   line-height: 1.5rem;
 }
@@ -112,4 +127,22 @@ button {
 }
 button:hover {
   transform: scale(1.1);
+}
+@media (max-width: 480px) {
+  #title {
+    font-size: 2.7rem;
+    text-align: center;
+    padding: 0 0.25rem;
+  }
+  #description {
+    line-height: 28px;
+    font-size: 20px;
+  }
+  .form-group {
+    margin: 0 1rem;
+    padding: 0rem;
+  }
+  input {
+    font-size: 20px;
+  }
 }
