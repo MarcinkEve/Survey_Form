@@ -55,7 +55,6 @@ p {
 .leave-back {
   display: flex;
   justify-content: space-between;
-
   margin: 0;
 }
 .calendar-field {
