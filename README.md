@@ -1,5 +1,7 @@
 # Survey_Form
 
+Task is taken from https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form "Responsive Web Design Projects" section
+
 Created with CodeSandbox
 
 ## Languages
